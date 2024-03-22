@@ -147,10 +147,10 @@ begin
                 assert w_Rlight = "000" report "all right should be off after" severity failure;
             -- right on
             w_Lin <= '0'; w_Rin <= '1'; wait for k_clk_period;
-                assert w_Rlight = "100" report "RA should be on when right blinker on" severity failure;
+                assert w_Rlight = "001" report "RA should be on when right blinker on" severity failure;
                 assert w_Llight = "000" report "all left should be off when right blinker on" severity failure;
                 wait for k_clk_period;
-                assert w_Rlight = "110" report "RA and RB should be on when right blinker on" severity failure;
+                assert w_Rlight = "011" report "RA and RB should be on when right blinker on" severity failure;
                 assert w_Llight = "000" report "all left should be off when right blinker on" severity failure;
                 wait for k_clk_period;
                 assert w_Rlight = "111" report "RA and RB and RC should be on when right blinker on" severity failure;
