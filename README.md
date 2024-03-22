@@ -6,6 +6,8 @@ Targeted toward Digilent Basys3. Make sure to install the [board files](https://
 
 Tested on Windows 11.
 
+![Waveform from thunderbird_fsm_tb](waveform.png)
+
 ---
 
 ## Build the project
